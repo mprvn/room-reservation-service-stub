@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.marvel.hospitality.stub.StubApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.756 s -- in com.marvel.hospitality.stub.StubApplicationTests

@@ -1,0 +1,4 @@
+com\marvel\hospitality\stub\StubApplication.class
+com\marvel\hospitality\stub\controller\StubAdminController.class
+com\marvel\hospitality\stub\config\WireMockProperties.class
+com\marvel\hospitality\stub\config\WireMockServerConfig.class

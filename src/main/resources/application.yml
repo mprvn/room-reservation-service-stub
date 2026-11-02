@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: stub
+
+
+server:
+  port: ${SERVER_PORT:8085}          # Spring Boot: actuator + /stub-admin
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+stub:
+  wiremock:
+    port: ${WIREMOCK_PORT:9090}      # point your app's third-party base URLs here
+    https-port: ${WIREMOCK_HTTPS_PORT:-1}
+    root-dir: ${WIREMOCK_ROOT_DIR:}  # empty => classpath:wiremock ; set to e.g. /stubs to mount externally
+    global-templating: true
+    verbose: ${WIREMOCK_VERBOSE:false}
+    max-request-journal-entries: 1000
+    proxies: {}
+
+
+logging:
+  level:
+    WireMock: INFO
